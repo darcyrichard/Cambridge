@@ -1,0 +1,22 @@
+{
+  "name": "Darcy",
+  "authors": [
+    "darcyrichard <darcy.richard@yahoo.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.2",
+    "angular": "^1.7.2",
+    "angular-route": "^1.7.2"
+  }
+}
