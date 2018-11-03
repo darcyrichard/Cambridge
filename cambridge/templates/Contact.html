@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html ng-app='Cambridge'>
+<head>
+    <meta charset="UTF-8">
+    <base href="/"> 
+    <title>Contact</title>
+    <script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/bower_components/angular-route/angular-route.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+    <style type="text/css">
+        body {
+            padding-top: 40px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 40px;
+        }
+
+        h1 {
+          text-align: center;
+        }
+
+        p { text-align: center;
+        }
+        
+        .navbar-brand {
+          padding: 0;
+          margin: 0;
+        }
+
+    </style>
+</head>
+<nav class="navbar navbar-fixed-top navbar-inverse">
+    <div class="container-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#"></a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myCollapsingList">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+      </div>
+     
+      <ul id="myCollapsingList" class ="nav navbar-right navbar-nav collapse navbar-collapse">
+        <li><a href="/templates/Home.html">Home</a></li>
+        <li role="presentation" class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="/templates/About.html" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+          <ul class="dropdown-menu">
+            <li><a href="/templates/Members.html">Members</a></li>
+            <li><a href="/templates/POA_Board.html">POA Board</a></li>
+            <li><a href="/templates/Bylaws.html">Bylaws</a></li>
+            <li><a href="/templates/Covenant.html">Protective Covenants</a></li>
+          </ul>
+        </li>
+        <li><a href="/templates/Contact.html">Contact</a></li>
+      </ul>
+      </div>
+  </nav>
+  </br>
+</br>
+  <h1>Contact</h1>
+  <p>The POA can be reached by email (<a href=mailto:cambridgepoa@gmail.com>cambridgepoa@gmail.com</a>) or through this form. </p>
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <form name="registrationForm" data-ng-submit="submitForm()" novalidate>
+                <div class="form-group">
+                    <label>First Name:</label>
+                    <input type="text" name="fname" class="form-control" placeholder="Your first name is required" data-ng-model="user.username" required>
+                </div>
+                <div class="form-group">
+                    <label>Last Name:</label>
+                    <input type="text" name="sname" class="form-control" placeholder="Your last name is required" data-ng-model="user.username" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone Number:</label>
+                    <input type="tel" name="phone" pattern="[0-9]{10}" class="form-control" placeholder="Your phone number is required" data-ng-model="user.phone" required>
+                </div>
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="email" name="email" class="form-control" placeholder="Your email is required" data-ng-model="user.email" required>
+                </div>
+                <div class="form-group">
+                    <label>Message:</label>
+                    <input type="text" name="message" class="form-control" placeholder="Type your message here">
+                </div>            
+            <button type="submit" class="btn btn-primary" data-ng-disabled="registrationForm.$invalid">Submit</button>
+          </form>
+        </div>
+    </div>
+</div>
+  
+  <script src='/js/app.js'></script>
+  <script src='/js/controller.js'></script>
+  <script src='/js/service.js'></script>
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <script src="/bower_components/bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
