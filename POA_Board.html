@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html ng-app='Cambridge'>
+<head>
+    <meta charset="UTF-8">
+    <base href="/"> 
+    <title>POA Board</title>
+    <script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/bower_components/angular-route/angular-route.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+    <style type="text/css">
+        body {
+            padding-top: 40px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 40px;
+        }
+        .navbar-brand {
+          padding: 0;
+          margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#"></a>
+      </div>
+     
+      <ul class ="nav navbar-nav navbar-right">
+        <li><a href="/templates/Home.html">Home</a></li>
+        <li role="presentation" class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="/templates/About.html" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+          <ul class="dropdown-menu">
+            <li><a href="/templates/Members.html">Members</a></li>
+            <li><a href="/templates/POA_Board.html">POA Board</a></li>
+            <li><a href="/templates/Bylaws.html">Bylaws</a></li>
+            <li><a href="/templates/Covenant.html">Protective Covenants</a></li>
+          </ul>
+        </li>
+        <li><a href="/templates/Events.html">Events</a></li>
+        <li><a href="/templates/Photos.html">Photos</a></li>
+        <li><a href="/templates/Contact.html">Contact</a></li>
+      </ul>
+      </div>
+  </nav>
+</br>
+</br>
+  <h1>Meet the POA Board</h1>
+  </br>
+</br>
+    <div class='container'> 
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">President - Ray Saldivar</a>
+                    </h4>
+                </div>
+                
+                <div id="collapseOne" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <p>Ray has lived in Cambridge Subdivision for 3 years, and has been the President of the POA for 2 years.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Vice President - Aaron Richard</a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>Aaron moved to Cambridge Subdivision in July, and was recently voted in as Vice President of the POA Board.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Treasurer - Eric Uranga</a>
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>Eric is our treasurer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Secretary - Amy Holt</a>
+                    </h4>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>Amy is our Secretary.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Board Member / Officer - Victoria Garcia-Martinez</a>
+                    </h4>
+                </div>
+                <div id="collapseFive" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>Victoria is our 5th board member.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+  <script src='/js/app.js'></script>
+  <script src='/js/controller.js'></script>
+  <script src='/js/service.js'></script>
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <script src="/bower_components/bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
